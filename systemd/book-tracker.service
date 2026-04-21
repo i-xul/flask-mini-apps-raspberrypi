@@ -1,0 +1,13 @@
+[Unit]
+Description=Book Tracker Flask application
+After=network.target
+
+[Service]
+User=appuser
+WorkingDirectory=/opt/flask-apps/book-tracker
+ExecStart=/usr/bin/python3 /opt/flask-apps/book-tracker/app.py
+Restart=always
+Environment="PATH=/usr/bin:/bin"
+
+[Install]
+WantedBy=multi-user.target
