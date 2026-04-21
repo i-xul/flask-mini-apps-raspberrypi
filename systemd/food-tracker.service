@@ -1,0 +1,13 @@
+[Unit]
+Description=Food Tracker Flask application
+After=network.target
+
+[Service]
+User=appuser
+WorkingDirectory=/opt/flask-apps/food-tracker
+ExecStart=/usr/bin/python3 /opt/flask-apps/food-tracker/app.py
+Restart=always
+Environment="PATH=/usr/bin:/bin"
+
+[Install]
+WantedBy=multi-user.target
