@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add New Food Entry</h2>
+
+<form method="POST">
+    <label for="name">Food</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="notes">Notes / Recipe</label><br>
+    <textarea id="notes" name="notes"></textarea><br><br>
+
+    <button type="submit">Save</button>
+</form>
+
+<br>
+<a href="{{ url_for('index') }}">⬅ Back to list</a>
+{% endblock %}
