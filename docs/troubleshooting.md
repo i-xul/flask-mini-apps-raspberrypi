@@ -37,3 +37,5 @@ Fix:
 - verify the active Nginx server block
 - confirm backend app is listening on the expected port
 - update reverse proxy routing accordingly
+
+A cleaned example Nginx config was created for the repository instead of copying the live `default` file directly, because real server configs often include unrelated defaults, comments, and environment-specific routing.
