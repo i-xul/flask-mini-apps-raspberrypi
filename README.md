@@ -50,6 +50,16 @@ The project began as a simple book tracker and later expanded into a food tracke
 * capture troubleshooting lessons from a real setup process
 * publish a cleaned public version of a real-world project
 
+## Next Steps
+
+Possible future improvements:
+
+- search and filtering
+- improved form validation
+- shared layout/styles between apps
+- authentication for private use
+- export/import support for entries
+
 ## Notes
 
 This repository is based on a real Raspberry Pi setup adapted into a public example.
