@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<p>
+    <a href="{{ url_for('add') }}">➕ Add new book</a>
+</p>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Date Read</th>
+        <th>Actions</th>
+    </tr>
+    {% for book in books %}
+    <tr>
+        <td>{{ book[1] }}</td>
+        <td>{{ book[2] }}</td>
+        <td>{{ book[3] if book[3] else "-" }}</td>
+        <td>
+            <a href="{{ url_for('edit', book_id=book[0]) }}">✏ Edit</a> |
+            <a href="{{ url_for('delete', book_id=book[0]) }}" onclick="return confirm('Delete this book?')">🗑 Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
