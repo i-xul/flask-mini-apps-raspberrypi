@@ -25,6 +25,14 @@ The project began as a simple book tracker and later expanded into a food tracke
 * delete entries
 * simple browser-based list view
 
+## Repository Structure
+
+- `apps/book-tracker/` – book tracking Flask app with SQLite and templates
+- `apps/food-tracker/` – food tracking Flask app with notes/recipe support
+- `systemd/` – example service files for running the apps automatically
+- `nginx/` – example reverse proxy configuration
+- `docs/` – setup notes, troubleshooting, and project documentation
+
 ## Stack
 
 * Raspberry Pi
