@@ -67,3 +67,5 @@ This repository is based on a real Raspberry Pi setup adapted into a public exam
 AI tools (ChatGPT) were used for ideation, debugging support, and documentation refinement. The final applications and deployment steps were tested manually in a real environment.
 
 Sensitive information such as real domains, usernames, internal paths, and network details has been removed or generalized.
+
+All configuration files in this repository are sanitized examples based on a real Raspberry Pi setup.
